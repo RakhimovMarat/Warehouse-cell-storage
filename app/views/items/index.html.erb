@@ -1,0 +1,17 @@
+<h1>Parts list</h1>
+
+<% @item.each do |item| %>
+
+	<p>
+		<%= item.number %>
+	</p>
+
+	<p>
+		<%= item.description %>
+	</p>
+
+	<hr>
+
+<% end %>
+
+	
