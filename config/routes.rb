@@ -4,8 +4,8 @@ Rails.application.routes.draw do
 
   get 'home/index'
 
-  resources :items do
-    resources :addresses
-  end
+  resources :items
+  
+  resources :addresses
   
 end
