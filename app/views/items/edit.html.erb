@@ -1,0 +1,14 @@
+<%= form_for :item, data: { turbo: false }, url: edit_item_path, method: :put do |f| %>
+
+	<p>
+		<%= f.label :description %> <br />
+		<%= f.text_area :description %>
+	</p>
+
+	
+
+	<p>
+		<%= f.submit 'Edit part' %>
+	</p>
+
+<% end %>
