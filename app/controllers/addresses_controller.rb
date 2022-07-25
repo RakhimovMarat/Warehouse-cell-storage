@@ -10,7 +10,7 @@ class AddressesController < ApplicationController
   def new; end
 
   def create
-    @item = Address.new(address_params)
+    @address = Address.new(address_params)
     if @address.save
       redirect_to @address
     else
